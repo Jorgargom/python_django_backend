@@ -1,9 +1,17 @@
 {% extends 'core/base.html' %}
 
-{% block title %}About{% endblock%}
-{% block content %}
+{% block title %}Acerca de mi{% endblock%}
 
-<h1>about</h1>
-<h2>Herencia</h2>
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+
+{% block headers %}
+
+<h1>Jorge García</h1>
+<span class="subheading">Junior Web Developer</span>
+
+{% endblock %}
+
+{% block content %}
 
 {% endblock%}

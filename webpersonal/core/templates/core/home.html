@@ -2,9 +2,16 @@
 
 {% block title %}Portada{% endblock%}
 
-{% block content %}
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
 
-<h1>Portada</h1>
-<h2>Herencia</h2>
+
+{% block headers %}
+
+<h1>Jorge García</h1>
+<span class="subheading">Junior Web Developer</span>
+
+{% endblock %}
+
+{% block content %}
 
 {% endblock%}
