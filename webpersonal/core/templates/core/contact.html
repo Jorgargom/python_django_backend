@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prueba1</title>
-</head>
-<body>
-    <h1>Mi web personal</h1>
-        <ul>
+{% extends 'core/base.html' %}
 
-            <li><a href="/">Portada</a></li>
-            <li><a href="/about-me/">Acerca de</a></li>
-            <li><a href="/portfolio/">Portfolio</a></li>
-            <li><a href="/contact/">Contacto</a></li>
+{% block title %}Contacto{% endblock%}
+{% block content %}
 
-        </ul>
+<h1>contact</h1>
+<h2>Herencia</h2>
 
-<h3>sdafsa</h3>
-
-
-
-</body>
-</html>
+{% endblock%}
