@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{% block title %}{% endblock%} | Jorge García</title>
+    <title>{% block title %}{% endblock %} | Jorge García</title>
 
     <!-- Estilos y fuentes del template  -->
     {% load static %}
@@ -48,26 +48,26 @@
     </nav>
 
     <!-- Cabecera -->
-
     <header class="masthead" style="background-image: url('{% block background %}{% endblock %}')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-            {% block headers %}{% endblock %}
-              
+              {% block headers %}{% endblock %}
             </div>
           </div>
         </div>
       </div>
     </header>
 
-
     <!-- Contenido -->
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
 
-    {% block content %}{% endblock%}
-
+    {% if request.path != "/" %}<hr>{% endif %}
+    
     <!-- Pié de página -->
     <footer>
       <div class="container">
@@ -99,7 +99,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; 2018 · Jorge García (Junior Web Developer) </p>
+            <p class="copyright text-muted">Copyright &copy; 2018 · Jorge García | Junior Web Developer </p>
           </div>
         </div>
       </div>
